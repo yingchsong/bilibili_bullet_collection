@@ -5,7 +5,7 @@ class Bullet:
         pass
     def create_xml(BV_number):
 
-        BV_number='BV1jc411H77P'
+        
         response=requests.get('https://api.bilibili.com/x/player/pagelist?bvid='+BV_number+'&jsonp=jsonp')
         target=response.text
         a=re.search(r'cid":[0-9]+,',target)
